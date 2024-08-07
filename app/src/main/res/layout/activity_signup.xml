@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#01044F">
+
+    <TextView
+        android:id="@+id/weatherapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MyWeatherApp"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/signuptext"
+        android:layout_below="@+id/weatherapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailtextfield"
+        android:layout_below="@+id/signuptext"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signin"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="20dp"
+            android:hint="Email"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordtextfield"
+        android:layout_below="@+id/emailtextfield"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:background="@drawable/rounded_edittext_background"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_below="@+id/passwordtextfield"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="SING UP"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginlink"
+        android:text="Login Now"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signupbtn"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:textSize="17dp"/>
+
+</RelativeLayout>

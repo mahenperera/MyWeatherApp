@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_settings"/>
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Logout"
+        android:layout_marginLeft="165dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click refresh and view button to apply changes and view weather information"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:textColor="#01044F"/>
+
+    <Button
+        android:id="@+id/refresh_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh and View"
+        android:layout_below="@id/refresh_text"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

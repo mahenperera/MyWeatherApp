@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="settings_list_preference_titles">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+
+    </string-array>
+    <string-array name="settings_list_preference_values">
+        <item>cel</item>
+        <item>fah</item>
+    </string-array>
+</resources>
